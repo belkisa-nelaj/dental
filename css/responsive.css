@@ -1,0 +1,219 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .hero {
+        height: 500px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .main-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--light-text);
+        box-shadow: var(--shadow-md);
+        flex-direction: column;
+        padding: var(--spacing-md) 0;
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-medium) ease;
+    }
+    
+    .main-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .main-menu > li > a {
+        padding: var(--spacing-sm) var(--spacing-xl);
+    }
+    
+    .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background-color: var(--light-bg);
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--transition-medium) ease;
+    }
+    
+    .has-dropdown.active > .dropdown {
+        max-height: 500px;
+    }
+    
+    .dropdown li a {
+        padding-left: var(--spacing-xxl);
+    }
+    
+    .services-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+    
+    .footer-links a {
+        margin: 0 var(--spacing-xs);
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .top-bar .container {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .contact-info span {
+        display: block;
+        margin: var(--spacing-xs) 0;
+    }
+}
+
+/* CSS3 Animations and Effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* CSS3 3D Transform for Cards */
+.service-card {
+    perspective: 1000px;
+}
+
+.service-card:hover .service-image {
+    transform: rotateX(5deg);
+}
+
+.service-image {
+    transition: transform var(--transition-medium) ease;
+    transform-origin: center bottom;
+}
+
+/* Gradient Buttons with Border Radius */
+.btn-gradient {
+    background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text);
+    border-radius: var(--radius-md);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-medium) ease;
+}
+
+.btn-gradient:hover::before {
+    opacity: 1;
+}
+
+/* CSS3 Border Image */
+.border-image-container {
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) 1;
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+/* CSS3 Multi-column Layout */
+.multi-column-text {
+    column-count: 2;
+    column-gap: var(--spacing-lg);
+    column-rule: 1px solid var(--medium-bg);
+}
+
+@media (max-width: 768px) {
+    .multi-column-text {
+        column-count: 1;
+    }
+}
