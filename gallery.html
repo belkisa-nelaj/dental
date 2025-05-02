@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Bright Smile Dental Clinic</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    
+    
+</head>
+<body>
+    <!-- Header (same as other pages) -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (555) 123-4567</span>
+                    <span><i class="fas fa-envelope"></i> info@brightsmile.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i> 123 Dental St, City, State</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/general/logo.png" alt="Bright Smile Dental Clinic Logo">
+                    </a>
+                </div>
+                <nav>
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="has-dropdown">
+                            <a href="services/">Services</a>
+                            <ul class="dropdown">
+                                <li><a href="services/general.html">General Dentistry</a></li>
+                                <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
+                                <li><a href="services/orthodontics.html">Orthodontics</a></li>
+                                <li><a href="services/emergency.html">Emergency Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="patient-resources.html">Patient Resources</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog/">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html" class="btn btn-primary">Book Appointment</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Dental Gallery</h1>
+                <p class="subtitle">Explore our state-of-the-art facilities, meet our team, and see our amazing smile transformations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter Section -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="facility">Our Facility</button>
+                <button class="filter-btn" data-filter="team">Our Team</button>
+                <button class="filter-btn" data-filter="before-after">Before & After</button>
+                <button class="filter-btn" data-filter="procedures">Procedures</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Facility Images -->
+                <div class="gallery-item facility">
+                    <div class="gallery-image">
+                        <img src="images/gallery/facility-reception.jpg" alt="Modern Reception Area">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Reception Area</h3>
+                                <p>Our welcoming and comfortable reception space designed with your comfort in mind</p>
+                                <a href="images/gallery/facility-reception.jpg" class="lightbox-trigger" title="Reception Area">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-badge">Facility</div>
+                </div>
+                
+                <div class="gallery-item facility">
+                    <div class="gallery-image">
+                        <img src="images/gallery/facility-treatment-room.jpg" alt="Modern Treatment Room">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Treatment Room</h3>
+                                <p>State-of-the-art treatment rooms with the latest equipment for optimal care</p>
+                                <a href="images/gallery/facility-treatment-room.jpg" class="lightbox-trigger" title="Treatment Room">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-badge">Facility</div>
+                </div>
+                
+                <div class="gallery-item facility">
+                    <div class="gallery-image">
+                        <img src="images/gallery/facility-waiting-area.jpg" alt="Comfortable Waiting Area">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Waiting Area</h3>
+                                <p>Comfortable seating and relaxing environment for patients</p>
+                                <a href="images/gallery/facility-waiting-area.jpg" class="lightbox-trigger" title="Waiting Area">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item facility">
+                    <div class="gallery-image">
+                        <img src="images/gallery/facility-xray-room.jpg" alt="Digital X-Ray Room">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>X-Ray Room</h3>
+                                <p>Advanced digital imaging technology for precise diagnostics</p>
+                                <a href="images/gallery/facility-xray-room.jpg" class="lightbox-trigger" title="X-Ray Room">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Images -->
+                <div class="gallery-item team">
+                    <div class="gallery-image">
+                        <img src="images/gallery/team-dentists.jpg" alt="Our Dentist Team">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Our Dentists</h3>
+                                <p>Meet our highly skilled dental professionals with decades of combined experience</p>
+                                <a href="images/gallery/team-dentists.jpg" class="lightbox-trigger" title="Our Dentists">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-badge team-badge">Our Team</div>
+                </div>
+                
+                <div class="gallery-item team">
+                    <div class="gallery-image">
+                        <img src="images/gallery/team-hygienists.jpg" alt="Our Dental Hygienists">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Dental Hygienists</h3>
+                                <p>Our dedicated team of dental hygienists</p>
+                                <a href="images/gallery/team-hygienists.jpg" class="lightbox-trigger" title="Dental Hygienists">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item team">
+                    <div class="gallery-image">
+                        <img src="images/gallery/team-staff.jpg" alt="Administrative Staff">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Administrative Staff</h3>
+                                <p>Our friendly front desk and administrative team</p>
+                                <a href="images/gallery/team-staff.jpg" class="lightbox-trigger" title="Administrative Staff">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Before & After Images -->
+                <div class="gallery-item before-after">
+                    <div class="gallery-image">
+                        <img src="images/gallery/before-after-veneers.jpg" alt="Veneers Before and After">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Porcelain Veneers</h3>
+                                <p>Dramatic smile transformation with porcelain veneers</p>
+                                <a href="images/gallery/before-after-veneers.jpg" class="lightbox-trigger" title="Porcelain Veneers Before & After">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-badge transformation">Before & After</div>
+                </div>
+                
+                <div class="gallery-item before-after">
+                    <div class="gallery-image">
+                        <img src="images/gallery/before-after-whitening.jpg" alt="Teeth Whitening Before and After">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Teeth Whitening</h3>
+                                <p>Remarkable results from our professional whitening treatment</p>
+                                <a href="images/gallery/before-after-whitening.jpg" class="lightbox-trigger" title="Teeth Whitening Before & After">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item before-after">
+                    <div class="gallery-image">
+                        <img src="images/gallery/before-after-invisalign.jpg" alt="Invisalign Before and After">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Invisalign Treatment</h3>
+                                <p>Teeth straightening results with Invisalign clear aligners</p>
+                                <a href="images/gallery/before-after-invisalign.jpg" class="lightbox-trigger" title="Invisalign Before & After">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item before-after">
+                    <div class="gallery-image">
+                        <img src="images/gallery/before-after-implants.jpg" alt="Dental Implants Before and After">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Dental Implants</h3>
+                                <p>Life-changing smile restoration with dental implants</p>
+                                <a href="images/gallery/before-after-implants.jpg" class="lightbox-trigger" title="Dental Implants Before & After">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Procedures Images -->
+                <div class="gallery-item procedures">
+                    <div class="gallery-image">
+                        <img src="images/gallery/procedure-examination.jpg" alt="Dental Examination">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Dental Examination</h3>
+                                <p>Comprehensive dental evaluations with advanced technology for accurate diagnosis</p>
+                                <a href="images/gallery/procedure-examination.jpg" class="lightbox-trigger" title="Dental Examination">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-badge procedure-badge">Procedure</div>
+                </div>
+                
+                <div class="gallery-item procedures">
+                    <div class="gallery-image">
+                        <img src="images/gallery/procedure-cleaning.jpg" alt="Professional Cleaning">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Professional Cleaning</h3>
+                                <p>Thorough professional cleaning by our skilled hygienists</p>
+                                <a href="images/gallery/procedure-cleaning.jpg" class="lightbox-trigger" title="Professional Cleaning">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item procedures">
+                    <div class="gallery-image">
+                        <img src="images/gallery/procedure-crown.jpg" alt="Crown Placement">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Crown Placement</h3>
+                                <p>Custom dental crown preparation and placement</p>
+                                <a href="images/gallery/procedure-crown.jpg" class="lightbox-trigger" title="Crown Placement">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item procedures">
+                    <div class="gallery-image">
+                        <img src="images/gallery/procedure-implant.jpg" alt="Implant Procedure">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Implant Procedure</h3>
+                                <p>State-of-the-art dental implant placement</p>
+                                <a href="images/gallery/procedure-implant.jpg" class="lightbox-trigger" title="Implant Procedure">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Gallery Submission Section -->
+    <section class="patient-gallery-submission">
+        <div class="container">
+            <div class="submission-content">
+                <div class="section-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h2>Share Your Smile Transformation</h2>
+                <p>Are you proud of your new smile? We'd love to showcase your transformation in our gallery (with your permission).</p>
+                <div class="cta-buttons">
+                    <a href="gallery-submission.html" class="btn btn-secondary">Submit Your Photos</a>
+                    <a href="testimonials.html" class="btn btn-outline">Read Testimonials</a>
+                </div>
+            </div>
+        </div>
+        <div class="wave-decoration">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="gallery-lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close Lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-prev" aria-label="Previous Image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img src="" alt="" id="lightbox-image">
+                <div class="lightbox-caption">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-description"></p>
+                </div>
+            </div>
+            <button class="lightbox-next" aria-label="Next Image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer (same as other pages) -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Bright Smile Dental Clinic is dedicated to providing exceptional dental care in a comfortable environment using the latest technology and techniques.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services/general.html">General Dentistry</a></li>
+                        <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
+                        <li><a href="services/orthodontics.html">Orthodontics</a></li>
+                        <li><a href="services/emergency.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Patient Resources</h3>
+                    <ul>
+                        <li><a href="patient-resources.html#forms">Patient Forms</a></li>
+                        <li><a href="patient-resources.html#education">Dental Education</a></li>
+                        <li><a href="patient-resources.html#insurance">Insurance Information</a></li>
+                        <li><a href="patient-resources.html#finance">Financing Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Dental St, City, State</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@brightsmile.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8am-5pm, Sat: 9am-2pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bright Smile Dental Clinic. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="accessibility.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if(filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Lightbox Functionality
+            const lightbox = document.getElementById('gallery-lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const lightboxPrev = document.querySelector('.lightbox-prev');
+            const lightboxNext = document.querySelector('.lightbox-next');
+            const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+            
+            let currentImageIndex = 0;
+            const lightboxImages = [];
+            
+            // Collect all lightbox images data
+            lightboxTriggers.forEach((trigger, index) => {
+                lightboxImages.push({
+                    src: trigger.getAttribute('href'),
+                    title: trigger.getAttribute('title'),
+                    description: trigger.closest('.overlay-content').querySelector('p').textContent
+                });
+                
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    currentImageIndex = index;
+                    openLightbox(currentImageIndex);
+                });
+            });
+            
+            function openLightbox(index) {
+                lightboxImage.src = lightboxImages[index].src;
+                lightboxTitle.textContent = lightboxImages[index].title;
+                lightboxDescription.textContent = lightboxImages[index].description;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            lightboxClose.addEventListener('click', closeLightbox);
+            
+            lightbox.addEventListener('click', function(e) {
+                if(e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+            
+            lightboxPrev.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex - 1 + lightboxImages.length) % lightboxImages.length;
+                openLightbox(currentImageIndex);
+            });
+            
+            lightboxNext.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % lightboxImages.length;
+                openLightbox(currentImageIndex);
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if(!lightbox.classList.contains('active')) return;
+                
+                if(e.key === 'Escape') {
+                    closeLightbox();
+                } else if(e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + lightboxImages.length) % lightboxImages.length;
+                    openLightbox(currentImageIndex);
+                } else if(e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % lightboxImages.length;
+                    openLightbox(currentImageIndex);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
