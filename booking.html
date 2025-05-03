@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Your Dental Practice</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@brightsmile.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> 123 Dental St, City, State</span>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header with Navigation -->
+    <div class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/general/logo.png" alt="Bright Smile Dental Clinic Logo">
+                </a>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="services/general.html">General Dentistry</a></li>
+                            <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
+                            <li><a href="services/orthodontics.html">Orthodontics</a></li>
+                            <li><a href="services/emergency.html">Emergency Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="patient-resources.html">Patient Resources</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="appointment.html" class="btn btn-primary">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Booking Hero Section -->
+    <section class="booking-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Schedule Your Dental Visit</h1>
+                <p class="subtitle">Easy online booking for all your dental care needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Main Section -->
+    <section class="booking-main">
+        <div class="container">
+            <div class="booking-grid">
+                <!-- Booking Form -->
+                <div class="booking-form">
+                    <div class="form-header">
+                        <h2>Book Your Appointment</h2>
+                        <p>Fill out the form below and we'll contact you to confirm</p>
+                    </div>
+                    
+                    <form id="bookingForm">
+                        <!-- Step 1: Personal Information -->
+                        <div class="form-step active" id="step1">
+                            <h3><span>1</span> Your Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                    <div class="error-message" id="firstNameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name <span class="required">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                    <div class="error-message" id="lastNameError"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                                    <div class="error-message" id="phoneError"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" id="dob" name="dob" class="form-control">
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-next" data-next="step2">Next</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Appointment Details -->
+                        <div class="form-step" id="step2">
+                            <h3><span>2</span> Appointment Details</h3>
+                            
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Needed <span class="required">*</span></label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="">Select a service</option>
+                                    <option value="cleaning">Dental Cleaning</option>
+                                    <option value="checkup">Routine Checkup</option>
+                                    <option value="whitening">Teeth Whitening</option>
+                                    <option value="filling">Filling</option>
+                                    <option value="crown">Crown/Bridge</option>
+                                    <option value="implant">Dental Implant</option>
+                                    <option value="ortho">Orthodontic Consultation</option>
+                                    <option value="other">Other Service</option>
+                                </select>
+                                <div class="error-message" id="serviceError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dentist" class="form-label">Preferred Dentist</label>
+                                <select id="dentist" name="dentist" class="form-control">
+                                    <option value="">No preference</option>
+                                    <option value="dr-smith">Dr. Sarah Smith</option>
+                                    <option value="dr-johnson">Dr. Michael Johnson</option>
+                                    <option value="dr-lee">Dr. Jennifer Lee</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date" class="form-label">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="date" name="date" class="form-control" required min="">
+                                <div class="error-message" id="dateError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time" class="form-label">Preferred Time <span class="required">*</span></label>
+                                <select id="time" name="time" class="form-control" required>
+                                    <option value="">Select a time range</option>
+                                    <option value="morning">Morning (8am-12pm)</option>
+                                    <option value="afternoon">Afternoon (12pm-4pm)</option>
+                                    <option value="evening">Evening (4pm-7pm)</option>
+                                </select>
+                                <div class="error-message" id="timeError"></div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline btn-prev" data-prev="step1">Back</button>
+                                <button type="button" class="btn btn-next" data-next="step3">Next</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Additional Information -->
+                        <div class="form-step" id="step3">
+                            <h3><span>3</span> Additional Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Special Requests or Notes</label>
+                                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Any specific concerns or information we should know?"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Are you a new patient? <span class="required">*</span></label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="patientType" value="new" required> Yes, I'm a new patient
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="patientType" value="existing"> No, I'm an existing patient
+                                    </label>
+                                </div>
+                                <div class="error-message" id="patientTypeError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">How did you hear about us?</label>
+                                <select id="referral" name="referral" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="search">Search Engine (Google, etc.)</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="friend">Friend/Family Referral</option>
+                                    <option value="ad">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline btn-prev" data-prev="step2">Back</button>
+                                <button type="submit" class="btn btn-primary">Book Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Booking Info -->
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-calendar-check"></i> Appointment Tips</h3>
+                        <ul>
+                            <li>New patients: Please arrive 15 minutes early</li>
+                            <li>Bring your insurance card and ID</li>
+                            <li>List of current medications</li>
+                            <li>Any recent dental X-rays (if available)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                        <div class="hours-row">
+                            <span>Monday - Friday</span>
+                            <span>8:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Saturday</span>
+                            <span>9:00 AM - 3:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone-alt"></i> Need Help Booking?</h3>
+                        <p>Call our friendly staff during office hours:</p>
+                        <p class="phone-number"><a href="tel:+1234567890">(123) 456-7890</a></p>
+                        <p>Or email us at <a href="mailto:appointments@yourdentalpractice.com">appointments@yourdentalpractice.com</a></p>
+                    </div>
+                    
+                    <div class="info-card emergency">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Dental Emergency?</h3>
+                        <p>For urgent dental needs, please call:</p>
+                        <p class="phone-number"><a href="tel:+1234567891">(123) 456-7891</a></p>
+                        <a href="../services/emergency.html" class="btn-link">Emergency Dental Info <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Appointment Request Received!</h2>
+            <p>We've received your booking request and will contact you within 24 hours to confirm your appointment.</p>
+            <p>A confirmation email has been sent to <span id="confirmEmail"></span></p>
+            <button class="btn btn-primary" id="closeModal">Return to Website</button>
+        </div>
+    </div>
+
+    <!-- Footer (same as other pages) -->
+    <footer>
+        <!-- Your existing footer code -->
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Set minimum date for date picker (today)
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').min = today;
+    
+    // Form step navigation
+    const steps = document.querySelectorAll('.form-step');
+    const nextButtons = document.querySelectorAll('.btn-next');
+    const prevButtons = document.querySelectorAll('.btn-prev');
+    
+    nextButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const currentStep = this.closest('.form-step');
+            const nextStepId = this.dataset.next;
+            
+            if (validateStep(currentStep)) {
+                currentStep.classList.remove('active');
+                document.getElementById(nextStepId).classList.add('active');
+                scrollToTop();
+            }
+        });
+    });
+    
+    prevButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const currentStep = this.closest('.form-step');
+            const prevStepId = this.dataset.prev;
+            
+            currentStep.classList.remove('active');
+            document.getElementById(prevStepId).classList.add('active');
+            scrollToTop();
+        });
+    });
+    
+    // Form validation
+    function validateStep(step) {
+        let isValid = true;
+        const requiredInputs = step.querySelectorAll('[required]');
+        
+        requiredInputs.forEach(input => {
+            const errorElement = document.getElementById(`${input.id}Error`);
+            
+            if (!input.value) {
+                input.classList.add('invalid');
+                errorElement.textContent = 'This field is required';
+                errorElement.classList.add('visible');
+                isValid = false;
+            } else {
+                input.classList.remove('invalid');
+                errorElement.classList.remove('visible');
+                
+                // Additional validation for specific fields
+                if (input.id === 'email' && !validateEmail(input.value)) {
+                    input.classList.add('invalid');
+                    errorElement.textContent = 'Please enter a valid email address';
+                    errorElement.classList.add('visible');
+                    isValid = false;
+                }
+                
+                if (input.id === 'phone' && !validatePhone(input.value)) {
+                    input.classList.add('invalid');
+                    errorElement.textContent = 'Please enter a valid phone number';
+                    errorElement.classList.add('visible');
+                    isValid = false;
+                }
+            }
+        });
+        
+        return isValid;
+    }
+    
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+    
+    function validatePhone(phone) {
+        const re = /^[\d\s\-\(\)]{10,}$/;
+        return re.test(phone);
+    }
+    
+    function scrollToTop() {
+        window.scrollTo({
+            top: document.querySelector('.booking-form').offsetTop - 20,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Form submission
+    const bookingForm = document.getElementById('bookingForm');
+    const confirmationModal = document.getElementById('confirmationModal');
+    const closeModal = document.getElementById('closeModal');
+    
+    bookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (validateStep(document.getElementById('step3'))) {
+            // In a real app, you would send the form data to your server here
+            const formData = new FormData(bookingForm);
+            const email = formData.get('email');
+            
+            // Show confirmation
+            document.getElementById('confirmEmail').textContent = email;
+            confirmationModal.style.display = 'flex';
+            
+            // Reset form
+            bookingForm.reset();
+            steps.forEach(step => step.classList.remove('active'));
+            document.getElementById('step1').classList.add('active');
+        }
+    });
+    
+    // Modal close
+    closeModal.addEventListener('click', function() {
+        confirmationModal.style.display = 'none';
+    });
+    
+    document.querySelector('.close-modal').addEventListener('click', function() {
+        confirmationModal.style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(e) {
+        if (e.target === confirmationModal) {
+            confirmationModal.style.display = 'none';
+        }
+    });
+});
+    </script>
+</body>
+</html>
