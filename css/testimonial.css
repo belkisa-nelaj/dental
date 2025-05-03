@@ -1,0 +1,270 @@
+/*testimonial*/
+
+/* General Styling */
+
+
+
+
+
+
+
+/* Testimonials Section Styling */
+.page-title {
+    background-color: #e9f7fd;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h2 {
+    font-size: 36px;
+    color: #2a6cb7;
+    margin-bottom: 15px;
+}
+
+.page-title p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto 60px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    max-width: 350px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.quote-mark {
+    font-size: 60px;
+    color: #e1f2fb;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: Georgia, serif;
+    z-index: 0;
+    line-height: 1;
+}
+
+.testimonial-content {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e1f2fb;
+    margin-right: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #2a6cb7;
+}
+
+.author-info h4 {
+    font-weight: 600;
+    color: #2a6cb7;
+    margin-bottom: 5px;
+}
+
+.author-info .treatment {
+    font-size: 14px;
+    color: #666;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.call-to-action {
+    background-color: #2a6cb7;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    margin: 0 auto 60px;
+    max-width: 900px;
+}
+
+.call-to-action h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #2a6cb7;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-testimonials {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h3 {
+    font-size: 28px;
+    color: #2a6cb7;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.video-item {
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.video-placeholder {
+    height: 200px;
+    background-color: #e1f2fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2a6cb7;
+    position: relative;
+}
+
+.play-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.play-icon::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #2a6cb7;
+    margin-left: 4px;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h4 {
+    color: #2a6cb7;
+    margin-bottom: 5px;
+}
+
+.video-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+    }
+    
+    .page-title {
+        padding: 40px 0;
+    }
+    
+    .page-title h2 {
+        font-size: 28px;
+    }
+    
+    .testimonial-card {
+        max-width: 100%;
+    }
+    
+    .video-item {
+        width: 100%;
+    }
+    
+    .call-to-action h3 {
+        font-size: 24px;
+    }
+}
+

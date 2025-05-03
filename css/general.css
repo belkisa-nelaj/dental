@@ -1,0 +1,272 @@
+/*general page*/
+/* Service Pages Specific Styles */
+
+/* Page Banner */
+.page-banner {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 2.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 0.9rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '/';
+    margin: 0 var(--spacing-sm);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb a {
+    color: var(--light-text);
+    opacity: 0.8;
+    transition: opacity var(--transition-fast) ease;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.breadcrumb .active {
+    color: var(--light-text);
+    font-weight: 500;
+}
+
+/* Service Introduction Section */
+.service-intro {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--light-text);
+}
+
+.service-intro-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.service-intro-text {
+    flex: 1;
+}
+
+.service-intro-text h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.service-intro-text p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.service-intro-image {
+    flex: 1;
+}
+
+.service-intro-image img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+}
+
+/* Service Highlights */
+.service-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-lg);
+    gap: var(--spacing-md);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 45%;
+}
+
+.highlight-item i {
+    color: var(--accent-color);
+    margin-right: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+/* Service Details Section */
+.service-details {
+    background-color: var(--light-bg);
+    padding: var(--spacing-xxl) 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.service-card {
+    background-color: var(--light-text);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: transform var(--transition-medium) ease, box-shadow var(--transition-medium) ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-card-content {
+    padding: var(--spacing-lg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.service-card p {
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+}
+
+/* Service Features List */
+.service-features {
+    list-style-type: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.service-features li {
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+}
+
+.service-features li i {
+    color: var(--accent-color);
+    margin-right: var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--light-text);
+    padding: var(--spacing-xxl) 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: var(--light-bg);
+    padding: var(--spacing-md);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color var(--transition-fast) ease;
+}
+
+.faq-question:hover {
+    background-color: var(--medium-bg);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.faq-toggle {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.faq-answer {
+    background-color: var(--light-text);
+    padding: 0 var(--spacing-md);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-medium) ease, padding var(--transition-medium) ease;
+}
+
+.faq-answer.active {
+    max-height: 300px;
+    padding: var(--spacing-md);
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* Active menu item styling */
+.main-menu .active > a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-intro-content {
+        flex-direction: column;
+    }
+    
+    .service-intro-image {
+        order: -1;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .highlight-item {
+        flex: 1 1 100%;
+    }
+}
