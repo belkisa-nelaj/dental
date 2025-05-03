@@ -1,0 +1,236 @@
+/* Orthodontics Page Specific Styles */
+.ortho-hero {
+    background: linear-gradient(135deg, #1e88e5, #26c6da);
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ortho-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/services/ortho-hero-bg.jpg') center/cover no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.ortho-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ortho-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.ortho-hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Treatment Options */
+.ortho-treatments {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.treatment-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.treatment-icon {
+    font-size: 2.5rem;
+    color: #1e88e5;
+    margin-bottom: 1.5rem;
+}
+
+.treatment-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.treatment-features {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.treatment-features li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.treatment-features i {
+    color: #00e676;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Benefits Section */
+.ortho-benefits {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    color: #1e88e5;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Process Section */
+.ortho-process {
+    padding: 5rem 0;
+    background: white;
+}
+
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    max-width: 220px;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #1e88e5;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.step h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* CTA Section */
+.ortho-cta {
+    background: linear-gradient(135deg, #1e88e5, #26c6da);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.ortho-cta h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.ortho-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #1e88e5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ortho-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .ortho-hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step {
+        max-width: 100%;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-outline, .btn-primary {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+

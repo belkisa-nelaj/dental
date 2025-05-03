@@ -1,0 +1,359 @@
+* Emergency Page Specific Styles */
+.emergency-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../images/services/emergency-hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.emergency-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.emergency-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.emergency-hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.hero-cta .btn {
+    margin: 0 0.5rem;
+}
+
+/* Emergency Info Section */
+.emergency-info {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+    color: #1e88e5;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.info-card h3 i {
+    font-size: 1.5rem;
+}
+
+.info-card.urgent {
+    border-top: 4px solid #e53935;
+}
+
+.info-card.hours {
+    border-top: 4px solid #1e88e5;
+}
+
+.info-card ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.info-card li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-card li::before {
+    content: "•";
+    color: #e53935;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.hours-list .day {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hours-list .day:last-child {
+    border-bottom: none;
+}
+
+.after-hours {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Emergency Guide Section */
+.emergency-guide {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.guide-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #1e88e5;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.step-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.step-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.step-content li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.step-content li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #1e88e5;
+}
+
+/* When to Call Section */
+.when-to-call {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.call-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.call-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.call-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.call-card h3 i {
+    font-size: 1.5rem;
+}
+
+.call-card.immediate {
+    border-top: 4px solid #e53935;
+}
+
+.call-card.immediate h3 i {
+    color: #e53935;
+}
+
+.call-card.soon {
+    border-top: 4px solid #1e88e5;
+}
+
+.call-card.soon h3 i {
+    color: #1e88e5;
+}
+
+.call-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.call-card li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.call-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.call-card.immediate li::before {
+    color: #e53935;
+}
+
+.call-card.soon li::before {
+    color: #1e88e5;
+}
+
+/* Peace of Mind Section */
+.peace-of-mind {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.peace-content h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.peace-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #1e88e5;
+    margin-bottom: 1.5rem;
+}
+
+.feature h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Emergency CTA Section */
+.emergency-cta {
+    background: linear-gradient(135deg, #1e88e5, #26c6da);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.emergency-cta h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.emergency-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #1e88e5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .emergency-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .emergency-hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-outline, .btn-primary {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        margin: 0 auto 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .emergency-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .emergency-hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn-large {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
