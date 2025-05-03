@@ -1,18 +1,18 @@
-/*general page*/
-/* Service Pages Specific Styles */
-
+/* General Service Page Styles */
 /* Page Banner */
 .page-banner {
-    background-color: var(--primary-color);
-    background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--light-text);
-    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, #1e88e5, #26c6da);
+    color: #ffffff;
+    padding: 3rem 0;
     text-align: center;
+    position: relative;
 }
 
 .page-banner h1 {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 0.5rem;
     font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
@@ -23,6 +23,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .breadcrumb li {
@@ -32,36 +33,39 @@
 
 .breadcrumb li:not(:last-child)::after {
     content: '/';
-    margin: 0 var(--spacing-sm);
+    margin: 0 0.5rem;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .breadcrumb a {
-    color: var(--light-text);
+    color: #ffffff;
     opacity: 0.8;
-    transition: opacity var(--transition-fast) ease;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
 }
 
 .breadcrumb a:hover {
     opacity: 1;
-    text-decoration: none;
 }
 
 .breadcrumb .active {
-    color: var(--light-text);
+    color: #ffffff;
     font-weight: 500;
 }
 
 /* Service Introduction Section */
 .service-intro {
-    padding: var(--spacing-xxl) 0;
-    background-color: var(--light-text);
+    padding: 3rem 0;
+    background-color: #ffffff;
 }
 
 .service-intro-content {
     display: flex;
-    gap: var(--spacing-xl);
+    gap: 2rem;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .service-intro-text {
@@ -69,14 +73,18 @@
 }
 
 .service-intro-text h2 {
-    margin-bottom: var(--spacing-md);
-    color: var(--primary-color);
+    margin-bottom: 1rem;
+    color: #1e88e5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
 }
 
 .service-intro-text p {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.7;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
 }
 
 .service-intro-image {
@@ -84,59 +92,67 @@
 }
 
 .service-intro-image img {
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     width: 100%;
+    height: auto;
 }
 
 /* Service Highlights */
 .service-highlights {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: var(--spacing-lg);
-    gap: var(--spacing-md);
+    margin-bottom: 1.5rem;
+    gap: 1rem;
 }
 
 .highlight-item {
     display: flex;
     align-items: center;
     flex: 1 1 45%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .highlight-item i {
-    color: var(--accent-color);
-    margin-right: var(--spacing-sm);
+    color: #00e676;
+    margin-right: 0.5rem;
     font-size: 1.2rem;
 }
 
 /* Service Details Section */
 .service-details {
-    background-color: var(--light-bg);
-    padding: var(--spacing-xxl) 0;
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    gap: 1.5rem;
 }
 
 .service-card {
-    background-color: var(--light-text);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     overflow: hidden;
-    transition: transform var(--transition-medium) ease, box-shadow var(--transition-medium) ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .service-card-content {
-    padding: var(--spacing-lg);
+    padding: 1.5rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -144,20 +160,25 @@
 
 .service-icon {
     font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-md);
+    color: #1e88e5;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .service-card h3 {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-sm);
+    color: #1e88e5;
+    margin-bottom: 0.5rem;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
 }
 
 .service-card p {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1rem;
     flex-grow: 1;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 /* Service Features List */
@@ -168,80 +189,86 @@
 }
 
 .service-features li {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .service-features li i {
-    color: var(--accent-color);
-    margin-right: var(--spacing-sm);
+    color: #00e676;
+    margin-right: 0.5rem;
     font-size: 0.9rem;
 }
 
 /* FAQ Section */
 .faq-section {
-    background-color: var(--light-text);
-    padding: var(--spacing-xxl) 0;
+    background-color: #ffffff;
+    padding: 3rem 0;
 }
 
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .faq-item {
-    margin-bottom: var(--spacing-md);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     overflow: hidden;
 }
 
 .faq-question {
-    background-color: var(--light-bg);
-    padding: var(--spacing-md);
+    background-color: #f5f5f5;
+    padding: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color var(--transition-fast) ease;
+    transition: background-color 0.2s ease;
 }
 
 .faq-question:hover {
-    background-color: var(--medium-bg);
+    background-color: #e0e0e0;
 }
 
 .faq-question h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: var(--text-color);
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
 }
 
 .faq-toggle {
-    color: var(--primary-color);
+    color: #1e88e5;
     font-size: 1.2rem;
 }
 
 .faq-answer {
-    background-color: var(--light-text);
-    padding: 0 var(--spacing-md);
+    background-color: #ffffff;
+    padding: 0 1rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height var(--transition-medium) ease, padding var(--transition-medium) ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .faq-answer.active {
     max-height: 300px;
-    padding: var(--spacing-md);
+    padding: 1rem;
 }
 
 .faq-answer p {
     margin: 0;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 /* Active menu item styling */
 .main-menu .active > a {
-    color: var(--primary-color);
+    color: #1e88e5;
     font-weight: 600;
 }
 
@@ -253,13 +280,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+    
     .service-intro-content {
         flex-direction: column;
     }
     
     .service-intro-image {
         order: -1;
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: 1.5rem;
     }
     
     .services-grid {
@@ -268,5 +299,19 @@
     
     .highlight-item {
         flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-banner h1 {
+        font-size: 1.8rem;
+    }
+    
+    .service-intro-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
     }
 }

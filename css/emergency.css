@@ -1,8 +1,9 @@
-* Emergency Page Specific Styles */
+/* Emergency Dental Services Page Styles */
+/* Hero Section */
 .emergency-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('../images/services/emergency-hero.jpg') center/cover no-repeat;
-    color: white;
+    color: #ffffff;
     padding: 6rem 0;
     text-align: center;
     position: relative;
@@ -11,33 +12,71 @@
 .emergency-hero .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .emergency-hero h1 {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .emergency-hero .subtitle {
     font-size: 1.5rem;
     margin-bottom: 2.5rem;
     opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
-.btn-large {
+/* Buttons */
+.btn {
+    display: inline-block;
     padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    margin: 0 0.5rem;
 }
 
-.hero-cta .btn {
-    margin: 0 0.5rem;
+.btn-primary {
+    background-color: #e53935;
+    color: #ffffff;
+    border: 2px solid #e53935;
+}
+
+.btn-primary:hover {
+    background-color: #c62828;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
 }
 
 /* Emergency Info Section */
 .emergency-info {
     padding: 4rem 0;
     background-color: #f9f9f9;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .info-grid {
@@ -48,10 +87,15 @@
 }
 
 .info-card {
-    background: white;
+    background: #ffffff;
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
 }
 
 .info-card h3 {
@@ -60,6 +104,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .info-card h3 i {
@@ -84,6 +129,7 @@
     margin-bottom: 0.75rem;
     padding-left: 1.5rem;
     position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
 .info-card li::before {
@@ -99,7 +145,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0.75rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hours-list .day:last-child {
@@ -109,14 +156,41 @@
 .after-hours {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
 }
 
 /* Emergency Guide Section */
 .emergency-guide {
     padding: 5rem 0;
-    background-color: white;
+    background-color: #ffffff;
+}
+
+.guide-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #1e88e5;
+    margin-bottom: 1rem;
+}
+
+.section-title p {
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .guide-steps {
@@ -135,7 +209,7 @@
     width: 40px;
     height: 40px;
     background: #1e88e5;
-    color: white;
+    color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -149,18 +223,21 @@
 .step-content h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
 }
 
 .step-content ul {
     list-style: none;
     padding-left: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .step-content li {
     margin-bottom: 0.5rem;
     padding-left: 1.25rem;
     position: relative;
+    line-height: 1.6;
 }
 
 .step-content li::before {
@@ -176,6 +253,12 @@
     background-color: #f9f9f9;
 }
 
+.call-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .call-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -184,10 +267,15 @@
 }
 
 .call-card {
-    background: white;
+    background: #ffffff;
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.call-card:hover {
+    transform: translateY(-5px);
 }
 
 .call-card h3 {
@@ -195,6 +283,7 @@
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .call-card h3 i {
@@ -220,12 +309,14 @@
 .call-card ul {
     list-style: none;
     padding-left: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .call-card li {
     margin-bottom: 0.75rem;
     padding-left: 1.5rem;
     position: relative;
+    line-height: 1.6;
 }
 
 .call-card li::before {
@@ -247,12 +338,21 @@
 /* Peace of Mind Section */
 .peace-of-mind {
     padding: 5rem 0;
-    background-color: white;
+    background-color: #ffffff;
+}
+
+.peace-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .peace-content h2 {
     text-align: center;
     margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #1e88e5;
+    font-size: 2.5rem;
 }
 
 .peace-features {
@@ -264,36 +364,64 @@
 .feature {
     text-align: center;
     padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
 }
 
 .feature i {
     font-size: 2.5rem;
     color: #1e88e5;
     margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.feature:hover i {
+    color: #e53935;
 }
 
 .feature h4 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+.feature p {
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 /* Emergency CTA Section */
 .emergency-cta {
     background: linear-gradient(135deg, #1e88e5, #26c6da);
-    color: white;
+    color: #ffffff;
     padding: 5rem 0;
     text-align: center;
 }
 
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .emergency-cta h2 {
-    color: white;
+    color: #ffffff;
     margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
 }
 
 .emergency-cta p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 .cta-buttons {
@@ -303,19 +431,26 @@
     flex-wrap: wrap;
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-}
-
-.btn-outline:hover {
-    background: white;
-    color: #1e88e5;
-}
-
 /* Responsive Adjustments */
+@media (max-width: 992px) {
+    .emergency-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .emergency-hero .subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .guide-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .emergency-hero {
+        padding: 4rem 0;
+    }
+    
     .emergency-hero h1 {
         font-size: 2.2rem;
     }
@@ -324,14 +459,15 @@
         font-size: 1.2rem;
     }
     
+    .btn {
+        margin: 0.5rem 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    
     .cta-buttons {
         flex-direction: column;
         align-items: center;
-    }
-    
-    .btn-outline, .btn-primary {
-        width: 100%;
-        max-width: 300px;
     }
     
     .step {
@@ -341,9 +477,13 @@
     .step-number {
         margin: 0 auto 1rem;
     }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .emergency-hero h1 {
         font-size: 1.8rem;
     }
@@ -352,8 +492,20 @@
         font-size: 1rem;
     }
     
-    .btn-large {
+    .btn {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
+    }
+    
+    .guide-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .emergency-cta h2 {
+        font-size: 2rem;
     }
 }
