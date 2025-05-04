@@ -65,7 +65,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="resources-hero">
             <div class="container">
                 <h1>Patient Resources</h1>
@@ -73,7 +72,6 @@
             </div>
         </section>
 
-        <!-- Patient Forms Section -->
         <section class="resources-section container">
             <h2 class="section-title">Patient Forms</h2>
             <p>To save time during your visit, download and complete these forms before your appointment.</p>
@@ -102,7 +100,6 @@
             </div>
         </section>
 
-        <!-- Insurance & Financing Section -->
         <section class="resources-section container">
             <h2 class="section-title">Insurance & Financing</h2>
             <p>We work with most major insurance providers and offer flexible payment options to make dental care accessible.</p>
@@ -145,7 +142,6 @@
             </div>
         </section>
 
-        <!-- Educational Resources -->
         <section class="resources-section container">
             <h2 class="section-title">Educational Resources</h2>
             <p>Learn more about maintaining good oral health and common dental procedures.</p>
@@ -174,7 +170,6 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container">
                 <h2 class="section-title">Frequently Asked Questions</h2>
@@ -233,7 +228,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -289,41 +283,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // FAQ toggle functionality
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function() {
-                    const answer = this.nextElementSibling;
-                    this.classList.toggle('active');
-                    answer.classList.toggle('active');
-                });
-            });
-    
-            // Mobile menu toggle 
-            const menuToggle = document.querySelector('.menu-toggle');
-            const mainMenu = document.querySelector('.main-menu');
-            
-            menuToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                mainMenu.classList.toggle('active');
-            });
-    
-            // Dropdown menu functionality for mobile 
-            const dropdownParents = document.querySelectorAll('.has-dropdown > a');
-            
-            dropdownParents.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 992) {
-                        e.preventDefault();
-                        const parent = this.parentElement;
-                        parent.classList.toggle('active');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="js/faq.js"></script>
 </body>
 </html>

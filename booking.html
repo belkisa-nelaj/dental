@@ -61,7 +61,6 @@
             </div>
         </div>
     </header>
-    <!-- Booking Hero Section -->
     <section class="booking-hero">
         <div class="container">
             <div class="hero-content">
@@ -71,11 +70,9 @@
         </div>
     </section>
 
-    <!-- Booking Main Section -->
     <section class="booking-main">
         <div class="container">
             <div class="booking-grid">
-                <!-- Booking Form -->
                 <div class="booking-form">
                     <div class="form-header">
                         <h2>Book Your Appointment</h2>
@@ -83,7 +80,6 @@
                     </div>
                     
                     <form id="bookingForm">
-                        <!-- Step 1: Personal Information -->
                         <div class="form-step active" id="step1">
                             <h3><span>1</span> Your Information</h3>
                             <div class="form-row">
@@ -121,8 +117,6 @@
                                 <button type="button" class="btn btn-next" data-next="step2">Next</button>
                             </div>
                         </div>
-                        
-                        <!-- Step 2: Appointment Details -->
                         <div class="form-step" id="step2">
                             <h3><span>2</span> Appointment Details</h3>
                             
@@ -175,7 +169,6 @@
                             </div>
                         </div>
                         
-                        <!-- Step 3: Additional Information -->
                         <div class="form-step" id="step3">
                             <h3><span>3</span> Additional Information</h3>
                             
@@ -217,7 +210,6 @@
                     </form>
                 </div>
                 
-                <!-- Booking Info -->
                 <div class="booking-info">
                     <div class="info-card">
                         <h3><i class="fas fa-calendar-check"></i> Appointment Tips</h3>
@@ -263,7 +255,6 @@
         </div>
     </section>
 
-    <!-- Confirmation Modal -->
     <div class="modal" id="confirmationModal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -332,134 +323,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    // Set minimum date for date picker (today)
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('date').min = today;
-    
-    // Form step navigation
-    const steps = document.querySelectorAll('.form-step');
-    const nextButtons = document.querySelectorAll('.btn-next');
-    const prevButtons = document.querySelectorAll('.btn-prev');
-    
-    nextButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const currentStep = this.closest('.form-step');
-            const nextStepId = this.dataset.next;
-            
-            if (validateStep(currentStep)) {
-                currentStep.classList.remove('active');
-                document.getElementById(nextStepId).classList.add('active');
-                scrollToTop();
-            }
-        });
-    });
-    
-    prevButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const currentStep = this.closest('.form-step');
-            const prevStepId = this.dataset.prev;
-            
-            currentStep.classList.remove('active');
-            document.getElementById(prevStepId).classList.add('active');
-            scrollToTop();
-        });
-    });
-    
-    // Form validation
-    function validateStep(step) {
-        let isValid = true;
-        const requiredInputs = step.querySelectorAll('[required]');
-        
-        requiredInputs.forEach(input => {
-            const errorElement = document.getElementById(`${input.id}Error`);
-            
-            if (!input.value) {
-                input.classList.add('invalid');
-                errorElement.textContent = 'This field is required';
-                errorElement.classList.add('visible');
-                isValid = false;
-            } else {
-                input.classList.remove('invalid');
-                errorElement.classList.remove('visible');
-                
-                // Additional validation for specific fields
-                if (input.id === 'email' && !validateEmail(input.value)) {
-                    input.classList.add('invalid');
-                    errorElement.textContent = 'Please enter a valid email address';
-                    errorElement.classList.add('visible');
-                    isValid = false;
-                }
-                
-                if (input.id === 'phone' && !validatePhone(input.value)) {
-                    input.classList.add('invalid');
-                    errorElement.textContent = 'Please enter a valid phone number';
-                    errorElement.classList.add('visible');
-                    isValid = false;
-                }
-            }
-        });
-        
-        return isValid;
-    }
-    
-    function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-    
-    function validatePhone(phone) {
-        const re = /^[\d\s\-\(\)]{10,}$/;
-        return re.test(phone);
-    }
-    
-    function scrollToTop() {
-        window.scrollTo({
-            top: document.querySelector('.booking-form').offsetTop - 20,
-            behavior: 'smooth'
-        });
-    }
-    
-    // Form submission
-    const bookingForm = document.getElementById('bookingForm');
-    const confirmationModal = document.getElementById('confirmationModal');
-    const closeModal = document.getElementById('closeModal');
-    
-    bookingForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        if (validateStep(document.getElementById('step3'))) {
-            // In a real app, you would send the form data to your server here
-            const formData = new FormData(bookingForm);
-            const email = formData.get('email');
-            
-            // Show confirmation
-            document.getElementById('confirmEmail').textContent = email;
-            confirmationModal.style.display = 'flex';
-            
-            // Reset form
-            bookingForm.reset();
-            steps.forEach(step => step.classList.remove('active'));
-            document.getElementById('step1').classList.add('active');
-        }
-    });
-    
-    // Modal close
-    closeModal.addEventListener('click', function() {
-        confirmationModal.style.display = 'none';
-    });
-    
-    document.querySelector('.close-modal').addEventListener('click', function() {
-        confirmationModal.style.display = 'none';
-    });
-    
-    window.addEventListener('click', function(e) {
-        if (e.target === confirmationModal) {
-            confirmationModal.style.display = 'none';
-        }
-    });
-});
-    </script>
+    <script src="js/booking.js"></script>
 </body>
 </html>

@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetic Dentistry - Evergreen Dental Clinic</title>
     <link rel="stylesheet" href="/css/cosmetic.css">
-    <!-- Google Fonts -->
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="cosmetic-page">
-    <!-- Header Section -->
     <header>
         <div class="top-bar">
             <div class="container">
@@ -65,7 +62,6 @@
         </div>
     </header>
 
-    <!-- Hero Banner -->
     <section class="cosmetic-hero">
         <div class="cosmetic-hero-content">
             <div class="container">
@@ -81,7 +77,6 @@
         </div>
     </section>
 
-    <!-- Introduction Cards -->
     <section class="cosmetic-intro">
         <div class="container">
             <div class="intro-cards">
@@ -110,7 +105,6 @@
         </div>
     </section>
 
-    <!-- About Cosmetic Dentistry -->
     <section class="about-cosmetic">
         <div class="container">
             <div class="about-cosmetic-content">
@@ -128,7 +122,6 @@
         </div>
     </section>
 
-    <!-- Services Tabs -->
     <section class="cosmetic-services">
         <div class="container">
             <div class="section-header">
@@ -146,7 +139,6 @@
                 </div>
                 
                 <div class="tabs-content">
-                    <!-- Veneers Tab -->
                     <div class="tab-pane active" id="veneers">
                         <div class="tab-content-wrapper">
                             <div class="tab-image">
@@ -167,8 +159,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Whitening Tab -->
                     <div class="tab-pane" id="whitening">
                         <div class="tab-content-wrapper">
                             <div class="tab-image">
@@ -189,8 +179,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Bonding Tab -->
                     <div class="tab-pane" id="bonding">
                         <div class="tab-content-wrapper">
                             <div class="tab-image">
@@ -212,7 +200,6 @@
                         </div>
                     </div>
                     
-                    <!-- Crowns Tab -->
                     <div class="tab-pane" id="crowns">
                         <div class="tab-content-wrapper">
                             <div class="tab-image">
@@ -234,7 +221,6 @@
                         </div>
                     </div>
                     
-                    <!-- Smile Makeover Tab -->
                     <div class="tab-pane" id="smile-makeover">
                         <div class="tab-content-wrapper">
                             <div class="tab-image">
@@ -260,7 +246,6 @@
         </div>
     </section>
 
-    <!-- Before and After Gallery -->
     <section id="cosmetic-gallery" class="before-after">
         <div class="container">
             <div class="section-header light">
@@ -270,7 +255,6 @@
             
             <div class="gallery-wrapper">
                 <div class="gallery-grid">
-                    <!-- Case 1 -->
                     <div class="before-after-case">
                         <div class="case-images">
                             <div class="before-image">
@@ -288,7 +272,6 @@
                         </div>
                     </div>
                     
-                    <!-- Case 2 -->
                     <div class="before-after-case">
                         <div class="case-images">
                             <div class="before-image">
@@ -306,7 +289,6 @@
                         </div>
                     </div>
                     
-                    <!-- Case 3 -->
                     <div class="before-after-case">
                         <div class="case-images">
                             <div class="before-image">
@@ -332,7 +314,6 @@
         </div>
     </section>
 
-    <!-- Testimonials with Images -->
     <section class="cosmetic-testimonials">
         <div class="container">
             <div class="section-header">
@@ -341,7 +322,6 @@
             </div>
             
             <div class="testimonial-cards">
-                <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-image">
                         <img src="../../images/sarahJ.jpg" alt="Sarah Johnson">
@@ -364,7 +344,6 @@
                     </div>
                 </div>
                 
-                <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="testimonial-image">
                         <img src="../../images/michaelC.jpg" alt="Michael Chen">
@@ -394,7 +373,6 @@
         </div>
     </section>
 
-    <!-- Pricing and Financing -->
     <section class="pricing-section">
         <div class="container">
             <div class="section-header">
@@ -446,7 +424,6 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
     <section class="cosmetic-cta">
         <div class="container">
             <div class="cta-content">
@@ -460,7 +437,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -518,26 +494,6 @@
     </footer>
 
     <script src="../../js/main.js"></script>
-    <script>
-        // Services Tabs
-        document.querySelectorAll('.tab-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons and panes
-                document.querySelectorAll('.tab-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                document.querySelectorAll('.tab-pane').forEach(pane => {
-                    pane.classList.remove('active');
-                });
-                
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                // Show corresponding tab pane
-                const tabId = button.getAttribute('data-tab');
-                document.getElementById(tabId).classList.add('active');
-            });
-        });
-    </script>
+    <script src="../js/cosemtic.js"></script>
 </body>
 </html>

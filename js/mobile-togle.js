@@ -1,5 +1,4 @@
  document.addEventListener('DOMContentLoaded', function() {
-     // Mobile menu toggle functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const mainMenu = document.querySelector('.main-menu');
             
@@ -7,8 +6,7 @@
                 this.classList.toggle('active');
                 mainMenu.classList.toggle('active');
             });
-
-            // Dropdown menu functionality for mobile
+            
             const dropdownParents = document.querySelectorAll('.has-dropdown > a');
             
             dropdownParents.forEach(link => {
