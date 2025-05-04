@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Evergreen Dental Clinic</title>
+   
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/resources.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+</head>
 <body>
-    
-    <!-- Header -->
     <header>
         <div class="top-bar">
             <div class="container">
                 <div class="contact-info">
                     <span><i class="fas fa-phone"></i> (555) 123-4567</span>
-                    <span><i class="fas fa-envelope"></i> info@evergreen.com</span>
-                    <span><i class="fas fa-map-marker-alt"></i> 123 Dental St, City, State</span>
+                    <span><i class="fas fa-envelope"></i> info@brightsmile.com</span>
                 </div>
                 <div class="social-links">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -31,7 +30,7 @@
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/general/logo.png" alt="Bright Smile Dental Clinic Logo">
+                        <img src="/images/general/logo.png" alt="Bright Smile Dental Clinic Logo">
                     </a>
                 </div>
                 <nav>
@@ -44,7 +43,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li class="has-dropdown">
-                            <a href="services.html">Services</a>
+                            <a href="services/">Services</a>
                             <ul class="dropdown">
                                 <li><a href="services/general.html">General Dentistry</a></li>
                                 <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
@@ -52,242 +51,186 @@
                                 <li><a href="services/emergency.html">Emergency Services</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="patient-resources.html">Patient Resources</a></li>
+                        <li><a href="patient-resources.html" class="active">Patient Resources</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="appointment.html" class="btn btn-primary">Book Appointment</a></li>
+                        <li><a href="booking.html" class="btn btn-primary">Book Appointment</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Page Title -->
-    <div class="page-title">
-        <div class="container">
-            <h1>Patient Resources</h1>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="container">
-            <div class="resource-section">
-                <h2>Welcome to Our Patient Resources</h2>
-                <p>At Evergreen Dental Clinic, we believe that informed patients make better decisions about their dental health. We've created this section to provide you with valuable information, forms, and resources to help you make the most of your dental care experience.</p>
-                
-                <div class="patient-info-section">
-                    <div class="info-box">
-                        <h3>New Patient Information</h3>
-                        <p>If you're a new patient at Evergreen  Dental Clinic, we're excited to welcome you to our dental family! To make your first visit as smooth as possible, please take a moment to review the information below and download the necessary forms.</p>
-                        <p>Please arrive 15 minutes before your scheduled appointment to complete any remaining paperwork. If you have any questions, don't hesitate to contact our friendly staff.</p>
-                    </div>
-                    <div class="info-box">
-                        <h3>What to Expect at Your First Visit</h3>
-                        <p>Your first appointment typically includes:</p>
-                        <ul>
-                            <li>A comprehensive dental examination</li>
-                            <li>Digital X-rays (if necessary)</li>
-                            <li>Professional cleaning (unless a different treatment is needed)</li>
-                            <li>Personalized treatment plan discussion</li>
-                        </ul>
-                        <p>Your appointment will last approximately 60-90 minutes.</p>
-                    </div>
-                </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="resources-hero">
+            <div class="container">
+                <h1>Patient Resources</h1>
+                <p>Everything you need for a smooth and comfortable dental experience</p>
             </div>
+        </section>
 
-            <div class="resource-section">
-                <h2>Forms & Documents</h2>
-                <p>Save time at your appointment by downloading and completing these forms in advance. Please bring the completed forms with you to your appointment.</p>
-                
-                <ul class="download-list">
-                    <li>
-                        <div class="download-link">
-                            <strong>New Patient Registration Form</strong>
-                            <span>Download PDF</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download-link">
-                            <strong>Medical History Form</strong>
-                            <span>Download PDF</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download-link">
-                            <strong>HIPAA Privacy Policy</strong>
-                            <span>Download PDF</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download-link">
-                            <strong>Insurance Information Form</strong>
-                            <span>Download PDF</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download-link">
-                            <strong>Patient Consent Form</strong>
-                            <span>Download PDF</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="resource-section">
-                <h2>Insurance & Payment Information</h2>
-                <p>Bright Smile Dental Clinic is committed to helping you maximize your insurance benefits. We accept most major dental insurance plans and will work with you to ensure you receive the maximum benefits available to you.</p>
-                
-                <h3>Insurance Plans We Accept</h3>
-                <div class="insurance-logos">
-                    <div class="insurance-logo">
-                        <img src="/api/placeholder/100/60" alt="Insurance Provider 1">
-                    </div>
-                    <div class="insurance-logo">
-                        <img src="/api/placeholder/100/60" alt="Insurance Provider 2">
-                    </div>
-                    <div class="insurance-logo">
-                        <img src="/api/placeholder/100/60" alt="Insurance Provider 3">
-                    </div>
-                    <div class="insurance-logo">
-                        <img src="/api/placeholder/100/60" alt="Insurance Provider 4">
-                    </div>
+        <!-- Patient Forms Section -->
+        <section class="resources-section container">
+            <h2 class="section-title">Patient Forms</h2>
+            <p>To save time during your visit, download and complete these forms before your appointment.</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-file-medical"></i>
+                    <h3>New Patient Forms</h3>
+                    <p>Complete these forms if you're visiting our clinic for the first time.</p>
+                    <a href="#" class="resource-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
                 
-                <h3 style="margin-top: 30px;">Payment Options</h3>
-                <p>We accept the following payment methods:</p>
-                <ul>
-                    <li>Cash</li>
-                    <li>Credit Cards (Visa, MasterCard, American Express, Discover)</li>
-                    <li>Personal Checks</li>
-                    <li>CareCredit Financing</li>
-                </ul>
+                <div class="resource-card">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Medical History</h3>
+                    <p>Please provide your complete medical history to help us provide the best care.</p>
+                    <a href="#" class="resource-link">Download PDF <i class="fas fa-download"></i></a>
+                </div>
                 
-                <div class="form-section">
-                    <h3>Insurance Verification</h3>
-                    <p>Complete this form to verify your insurance coverage before your appointment.</p>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="insurance-provider">Insurance Provider</label>
-                            <input type="text" id="insurance-provider" name="insurance-provider" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="policy-number">Policy Number</label>
-                            <input type="text" id="policy-number" name="policy-number" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="group-number">Group Number</label>
-                            <input type="text" id="group-number" name="group-number">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <button type="submit" class="btn-submit">Submit</button>
-                    </form>
+                <div class="resource-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Privacy Policy</h3>
+                    <p>Review our privacy practices and how we protect your health information.</p>
+                    <a href="#" class="resource-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
+        </section>
 
-            <div class="resource-section">
-                <h2>Dental Education</h2>
-                <p>We believe that patient education is essential for maintaining optimal dental health. Explore these resources to learn more about dental conditions, treatments, and preventive care.</p>
+        <!-- Insurance & Financing Section -->
+        <section class="resources-section container">
+            <h2 class="section-title">Insurance & Financing</h2>
+            <p>We work with most major insurance providers and offer flexible payment options to make dental care accessible.</p>
+            
+            <h3>Accepted Insurance Plans</h3>
+            <p>We accept most major dental insurance plans, including:</p>
+            
+            <div class="insurance-logos">
+                <img src="/images/placeholder/150/75" alt="Delta Dental" class="insurance-logo">
+                <img src="/images/placeholder/150/75" alt="Cigna" class="insurance-logo">
+                <img src="/images/placeholder/150/75" alt="Aetna" class="insurance-logo">
+                <img src="/images/placeholder/150/75" alt="MetLife" class="insurance-logo">
+                <img src="/images/placeholder/150/75" alt="Guardian" class="insurance-logo">
+            </div>
+            
+            <h3>Financing Options</h3>
+            <p>We understand that dental care can be an investment. That's why we offer several financing options:</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>CareCredit</h3>
+                    <p>Special financing options for treatments and procedures.</p>
+                    <a href="#" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
                 
-                <div class="resource-grid">
-                    <div class="resource-card">
-                        <img src="/api/placeholder/300/180" alt="Oral Hygiene Tips">
-                        <div class="resource-card-content">
-                            <h3>Oral Hygiene Tips</h3>
-                            <p>Learn proper brushing and flossing techniques to maintain healthy teeth and gums.</p>
-                            <a href="#" class="resource-link">Read More</a>
+                <div class="resource-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Payment Plans</h3>
+                    <p>Customized payment plans to fit your budget.</p>
+                    <a href="#" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="resource-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Dental Savings Plan</h3>
+                    <p>Our in-house savings plan for patients without insurance.</p>
+                    <a href="#" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Resources -->
+        <section class="resources-section container">
+            <h2 class="section-title">Educational Resources</h2>
+            <p>Learn more about maintaining good oral health and common dental procedures.</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-book-medical"></i>
+                    <h3>Oral Hygiene Guide</h3>
+                    <p>Tips and techniques for proper brushing, flossing, and overall oral care.</p>
+                    <a href="#" class="resource-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="resource-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Nutrition & Oral Health</h3>
+                    <p>How your diet affects your dental health and what foods to avoid.</p>
+                    <a href="#" class="resource-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="resource-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Children's Dental Care</h3>
+                    <p>Resources for parents on caring for children's teeth.</p>
+                    <a href="#" class="resource-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How often should I visit the dentist?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For most patients, we recommend scheduling a dental check-up and professional cleaning every six months. However, depending on your specific oral health needs, we may suggest more frequent visits.</p>
                         </div>
                     </div>
-                    <div class="resource-card">
-                        <img src="/api/placeholder/300/180" alt="Understanding Tooth Decay">
-                        <div class="resource-card-content">
-                            <h3>Understanding Tooth Decay</h3>
-                            <p>Discover the causes of tooth decay and how to prevent cavities.</p>
-                            <a href="#" class="resource-link">Read More</a>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What should I do in case of a dental emergency?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you're experiencing a dental emergency, call our office immediately at (555) 123-4567. For after-hours emergencies, follow the prompts to reach our on-call dentist. For severe emergencies involving facial trauma or difficulty breathing, please go to the nearest emergency room.</p>
                         </div>
                     </div>
-                    <div class="resource-card">
-                        <img src="/api/placeholder/300/180" alt="Gum Disease Prevention">
-                        <div class="resource-card-content">
-                            <h3>Gum Disease Prevention</h3>
-                            <p>Learn about the stages of gum disease and effective prevention strategies.</p>
-                            <a href="#" class="resource-link">Read More</a>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How can I manage dental anxiety?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We understand that dental anxiety is common. Our office offers several comfort options including noise-cancelling headphones, blankets, and various sedation options for patients who experience anxiety. Let us know about your concerns before your appointment, and we'll work with you to make your visit as comfortable as possible.</p>
                         </div>
                     </div>
-                    <div class="resource-card">
-                        <img src="/api/placeholder/300/180" alt="Teeth Whitening Options">
-                        <div class="resource-card-content">
-                            <h3>Teeth Whitening Options</h3>
-                            <p>Explore different teeth whitening methods and their effectiveness.</p>
-                            <a href="#" class="resource-link">Read More</a>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer payment plans for major procedures?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer several financing options including in-house payment plans and third-party financing through CareCredit. Our financial coordinator will work with you to find the best option for your budget.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What should I do if I chip or break a tooth?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you chip or break a tooth, rinse your mouth with warm water and apply a cold compress to reduce swelling. Save any broken pieces if possible. Call our office as soon as possible to schedule an emergency appointment. We'll assess the damage and recommend appropriate treatment options.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="resource-section faq-section">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How often should I visit the dentist?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Most dental professionals recommend visiting the dentist for a check-up and cleaning every six months. However, depending on your oral health needs, your dentist may suggest more frequent visits.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What should I do in a dental emergency?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>If you experience a dental emergency such as severe pain, a knocked-out tooth, or broken dental work, contact our office immediately at (555) 123-4567. For after-hours emergencies, follow the instructions on our voicemail to reach our on-call dentist.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Do you accept my insurance?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We accept most major dental insurance plans. Please contact our office with your insurance information, and we'll be happy to verify your coverage and benefits.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How can I manage dental anxiety?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We understand that dental visits can cause anxiety for some patients. Our office offers various comfort options, including sedation dentistry, to help manage dental anxiety. Please discuss your concerns with our team, and we'll work with you to make your visit as comfortable as possible.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What payment options do you offer?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We accept cash, credit cards, personal checks, and CareCredit financing. We also offer in-house payment plans for certain treatments. Our staff will be happy to discuss payment options that work best for you.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -343,30 +286,19 @@
     </footer>
 
     <script>
-        // Simple FAQ toggle functionality
         document.addEventListener('DOMContentLoaded', function() {
+            // FAQ toggle functionality
             const faqQuestions = document.querySelectorAll('.faq-question');
             
             faqQuestions.forEach(question => {
                 question.addEventListener('click', function() {
                     const answer = this.nextElementSibling;
-                    const isOpen = answer.style.display === 'block';
-                    
-                    // Toggle the current answer
-                    answer.style.display = isOpen ? 'none' : 'block';
-                    
-                    // Update the plus/minus sign
-                    const toggleSign = this.querySelector('span:last-child');
-                    toggleSign.textContent = isOpen ? '+' : '-';
+                    this.classList.toggle('active');
+                    answer.classList.toggle('active');
                 });
             });
-            
-            // Hide all answers initially
-            document.querySelectorAll('.faq-answer').forEach(answer => {
-                answer.style.display = 'none';
-            });
-
-            // Mobile menu toggle
+    
+            // Mobile menu toggle 
             const menuToggle = document.querySelector('.menu-toggle');
             const mainMenu = document.querySelector('.main-menu');
             
@@ -374,8 +306,8 @@
                 this.classList.toggle('active');
                 mainMenu.classList.toggle('active');
             });
-
-            // Dropdown menu functionality for mobile
+    
+            // Dropdown menu functionality for mobile 
             const dropdownParents = document.querySelectorAll('.has-dropdown > a');
             
             dropdownParents.forEach(link => {
