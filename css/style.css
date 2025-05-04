@@ -115,9 +115,6 @@ section {
 /* Header Styles */
 header {
     background-color: var(--light-text);
-    box-shadow: var(--shadow-sm);
-    position: relative;
-    z-index: 1000;
 }
 
 .top-bar {

@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="/css/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   
-    
-    
+    <link rel="JavaScript" href="/js/mobile-togle.js">
 </head>
 <body>
     <!-- Top Bar -->
@@ -46,7 +44,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li class="has-dropdown">
-                            <a href="services/">Services</a>
+                            <a href="services/general.html">Services</a>
                             <ul class="dropdown">
                                 <li><a href="services/general.html">General Dentistry</a></li>
                                 <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
@@ -314,31 +312,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle functionality
-            const menuToggle = document.querySelector('.menu-toggle');
-            const mainMenu = document.querySelector('.main-menu');
-            
-            menuToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                mainMenu.classList.toggle('active');
-            });
-
-            // Dropdown menu functionality for mobile
-            const dropdownParents = document.querySelectorAll('.has-dropdown > a');
-            
-            dropdownParents.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 992) {
-                        e.preventDefault();
-                        const parent = this.parentElement;
-                        parent.classList.toggle('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
