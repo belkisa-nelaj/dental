@@ -10,59 +10,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <span><i class="fas fa-phone"></i> (555) 123-4567</span>
-                <span><i class="fas fa-envelope"></i> info@evergreen.com</span>
-                <span><i class="fas fa-map-marker-alt"></i> 123 Dental St, City, State</span>
-            </div>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (555) 123-4567</span>
+                    <span><i class="fas fa-envelope"></i> info@evergreen.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Main Header with Navigation -->
-    <div class="main-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/general/logo.png" alt="Evergreen  Dental Clinic Logo">
-                </a>
+        <div class="main-header">
+            <div class="container">
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Evergreen Dental Clinic Logo">
+                    </a>
+                </div>
+                <nav>
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="has-dropdown">
+                            <a href="services/">Services</a>
+                            <ul class="dropdown">
+                                <li><a href="services/general.html">General Dentistry</a></li>
+                                <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
+                                <li><a href="services/orthodontics.html">Orthodontics</a></li>
+                                <li><a href="services/emergency.html">Emergency Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="patient-resources.html">Patient Resources</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html" class="btn btn-primary">Book Appointment</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="main-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="about.html">About Us</a></li>
-                    <li class="has-dropdown">
-                        <a href="services.html">Services</a>
-                        <ul class="dropdown">
-                            <li><a href="services/general.html">General Dentistry</a></li>
-                            <li><a href="services/cosmetic.html">Cosmetic Dentistry</a></li>
-                            <li><a href="services/orthodontics.html">Orthodontics</a></li>
-                            <li><a href="services/emergency.html">Emergency Services</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="patient-resources.html">Patient Resources</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="appointment.html" class="btn btn-primary">Book Appointment</a></li>
-                </ul>
-            </nav>
         </div>
-    </div>
-
+    </header>
     <!-- Booking Hero Section -->
     <section class="booking-hero">
         <div class="container">
@@ -279,9 +277,60 @@
         </div>
     </div>
 
-    <!-- Footer (same as other pages) -->
     <footer>
-        <!-- Your existing footer code -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Evergreen Dental</h3>
+                    <p>Providing quality dental care for the whole family with a focus on comfort and advanced technology.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#cleanings">Cleanings & Check-ups</a></li>
+                        <li><a href="services.html#whitening">Teeth Whitening</a></li>
+                        <li><a href="services.html#implants">Dental Implants</a></li>
+                        <li><a href="services.html#orthodontics">Orthodontics</a></li>
+                        <li><a href="services.html#emergency">Emergency Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Dental Street, Suite 100</p>
+                    <p>Cityville, State 12345</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@brightsmile.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 8am-5pm</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Evergreen Dental Clinic. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="accessibility.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
