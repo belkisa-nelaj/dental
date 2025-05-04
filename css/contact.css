@@ -1,3 +1,4 @@
+/* Contact Hero Section */
 .contact-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('../images/contact.jpg') center/cover no-repeat;
@@ -144,7 +145,6 @@ textarea.form-control {
     transform: translateY(-2px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .contact-info h2 {
     color: #1e88e5;
@@ -307,7 +307,7 @@ textarea.form-control {
     display: block;
 }
 
-
+/* Responsive Styles */
 @media (max-width: 1024px) {
     .contact-hero h1 {
         font-size: 2.5rem;
