@@ -1,4 +1,4 @@
-/* Responsive Styles */
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -139,7 +139,7 @@
     }
 }
 
-/* CSS3 Animations and Effects */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -169,7 +169,6 @@
     transform-origin: center bottom;
 }
 
-/* Gradient Buttons with Border Radius */
 .btn-gradient {
     background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--light-text);
@@ -196,7 +195,7 @@
     opacity: 1;
 }
 
-/* CSS3 Border Image */
+
 .border-image-container {
     border-width: 10px;
     border-style: solid;
@@ -205,7 +204,6 @@
     margin: var(--spacing-lg) 0;
 }
 
-/* CSS3 Multi-column Layout */
 .multi-column-text {
     column-count: 2;
     column-gap: var(--spacing-lg);

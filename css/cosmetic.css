@@ -1,4 +1,4 @@
-/* Modern Cosmetic Dentistry Styles */
+
 .cosmetic-page {
   background-color: #f9fafb;
   font-family: 'Roboto', sans-serif;
@@ -6,7 +6,7 @@
   line-height: 1.6;
 }
 
-/* Hero Banner - Updated with more subtle gradient */
+
 .cosmetic-hero {
   position: relative;
   height: 650px;
@@ -104,7 +104,7 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Introduction Cards - Updated with softer shadows and hover effects */
+/* Introduction Cards  */
 .cosmetic-intro {
   padding: 30px 0 60px;
   position: relative;
@@ -167,7 +167,7 @@
   line-height: 1.7;
 }
 
-/* Services Section - Updated with better spacing and card design */
+/* Services Section */
 .cosmetic-services {
   padding: 100px 0;
   background-color: #f8fafc;
@@ -274,7 +274,7 @@
   gap: 12px;
 }
 
-/* Benefits Section - Modern gradient and improved contrast */
+/* Benefits Section*/
 .cosmetic-benefits {
   padding: 100px 0;
   background: linear-gradient(135deg, #4f46e5, #3b82f6);
@@ -368,7 +368,7 @@
   font-weight: 300;
 }
 
-/* Testimonials Section - Updated with modern card design */
+/* Testimonials Section  */
 .cosmetic-testimonials {
   padding: 100px 0;
   background-color: #ffffff;
@@ -456,7 +456,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* FAQ Section - Improved interaction and spacing */
+/* FAQ Section */
 .cosmetic-faq {
   padding: 100px 0;
   background-color: #f8fafc;
@@ -529,7 +529,7 @@
   max-height: 500px;
 }
 
-/* Before/After Gallery - Updated with better hover effects */
+/* Before/After Gallery */
 .cosmetic-gallery {
   padding: 100px 0;
   background-color: #ffffff;
@@ -630,7 +630,7 @@
   color: #4f46e5;
 }
 
-/* CTA Section - Improved with modern gradient and focus */
+/* CTA Section  */
 .cosmetic-cta {
   padding: 100px 0;
   background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);

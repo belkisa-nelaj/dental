@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
+            
             filterButtons.forEach(btn => btn.classList.remove('active'));
             
-            // Add active class to clicked button
+      
             this.classList.add('active');
             
             const filterValue = this.getAttribute('data-filter');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         openLightbox(currentImageIndex);
     });
     
-    // Keyboard navigation
+
     document.addEventListener('keydown', function(e) {
         if(!lightbox.classList.contains('active')) return;
         

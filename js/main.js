@@ -1,11 +1,11 @@
-// Wait for the DOM to be fully loaded
+
 $(document).ready(function() {
-    // Mobile Menu Toggle
+    
     $('.menu-toggle').click(function() {
         $(this).toggleClass('active');
         $('.main-menu').toggleClass('active');
         
-        // Toggle the bars to create an X icon
+       
         $(this).find('.bar:nth-child(1)').toggleClass('rotate-45 translate-y-8');
         $(this).find('.bar:nth-child(2)').toggleClass('opacity-0');
         $(this).find('.bar:nth-child(3)').toggleClass('rotate-neg-45 translate-y-neg-8');
@@ -37,7 +37,7 @@ $(document).ready(function() {
     animateOnScroll();
     $(window).on('scroll resize', animateOnScroll);
 
-    // Smooth scroll for anchor links
+  
     $('a[href^="#"]').click(function(e) {
         const target = $($(this).attr('href'));
         
@@ -49,7 +49,7 @@ $(document).ready(function() {
         }
     });
 
-    // Testimonial Slider (Simple version without additional libraries)
+    // Testimonial Slider 
     let currentSlide = 0;
     const $slides = $('.testimonial-item');
     const totalSlides = $slides.length;
@@ -73,10 +73,10 @@ $(document).ready(function() {
     if ($slides.length > 0) {
         showSlide(0);
         
-        // Auto advance slides every 5 seconds
+       
         setInterval(nextSlide, 5000);
         
-        // Add navigation buttons if there's more than one slide
+
         if (totalSlides > 1) {
             const $prevButton = $('<button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>');
             const $nextButton = $('<button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>');
@@ -90,12 +90,11 @@ $(document).ready(function() {
 
     // Weather Widget
     function loadWeatherWidget() {
-        // This is a placeholder for a weather widget implementation
-        // In a real implementation, you would use a weather API
+
         const weatherWidgetContainer = document.getElementById('weather-widget');
         
         if (weatherWidgetContainer) {
-            // Mock data for demonstration
+      
             const weatherData = {
                 location: "Cityville",
                 temperature: "72°F",
@@ -122,7 +121,7 @@ $(document).ready(function() {
                 <div class="weather-forecast">
             `;
             
-            // Add forecast days
+   
             weatherData.forecast.forEach(day => {
                 weatherHTML += `
                     <div class="forecast-day">
@@ -135,7 +134,7 @@ $(document).ready(function() {
             
             weatherHTML += `</div>`;
             
-            // Insert into the container
+      
             weatherWidgetContainer.innerHTML = weatherHTML;
         }
     }
@@ -183,50 +182,49 @@ $(document).ready(function() {
         }
     }
 
-    // If appointments chart exists on the page, load it
+  
     if ($('#appointments-chart').length) {
         loadAppointmentsChart();
     }
 
-    // Load timer for automatic content updates
     let autoUpdateTimer;
 
     function startAutoUpdateTimer() {
-        // Update dynamic content every 5 minutes
+     
         autoUpdateTimer = setInterval(function() {
-            // Refresh weather widget if it exists
+          
             if ($('#weather-widget').length) {
                 loadWeatherWidget();
             }
             
-            // Refresh appointments chart if it exists
+           
             if ($('#appointments-chart').length) {
                 loadAppointmentsChart();
             }
             
-            // Show notification to user
+       
             showNotification('Page content has been refreshed.', 'info');
-        }, 300000); // 5 minutes in milliseconds
+        }, 300000); 
     }
 
-    // Start auto update timer when user interacts with the page
+
     $(document).on('click', function() {
         if (!autoUpdateTimer) {
             startAutoUpdateTimer();
         }
     });
 
-    // Notification system
+
     function showNotification(message, type = 'info') {
         const notification = $(`<div class="notification ${type}">${message}</div>`);
         $('body').append(notification);
         
-        // Show notification with animation
+        
         setTimeout(function() {
             notification.addClass('show');
         }, 10);
         
-        // Remove notification after 5 seconds
+       
         setTimeout(function() {
             notification.removeClass('show');
             setTimeout(function() {

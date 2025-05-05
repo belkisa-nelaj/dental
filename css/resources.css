@@ -1,6 +1,4 @@
-
-        /* Additional styles for patient resources page */
-        .resources-hero {
+  .resources-hero {
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/resources.jpg');
             background-size: cover;
             background-position: center;
