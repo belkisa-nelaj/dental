@@ -101,26 +101,7 @@
             max-height: 500px;
         }
         
-        .insurance-logos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-        }
         
-        .insurance-logo {
-            max-width: 150px;
-            height: auto;
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.3s ease;
-        }
-        
-        .insurance-logo:hover {
-            filter: grayscale(0);
-            opacity: 1;
-        }
         
         @media (max-width: 768px) {
             .resources-grid {
