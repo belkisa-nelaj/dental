@@ -301,7 +301,7 @@ header {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/homepage1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/general/homepage1.jpg');
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -538,6 +538,98 @@ header {
 
 .menu-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+
+}
+/* Blog Preview Section */
+.blog-preview {
+    background-color: var(--light-bg);
+    padding: var(--spacing-xxl) 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.blog-card {
+    background-color: var(--light-text);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-medium) ease, box-shadow var(--transition-medium) ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.blog-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow) ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: var(--spacing-lg);
+}
+
+.blog-content h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.3rem;
+}
+
+.blog-content h3 a {
+    color: var(--text-color);
+    transition: color var(--transition-fast) ease;
+}
+
+.blog-content h3 a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.blog-meta {
+    color: #757575;
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Responsive Design for Blog Preview */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-image {
+        height: 180px;
+    }
+    
+    .blog-content {
+        padding: var(--spacing-md);
+    }
+    
+    .blog-content h3 {
+        font-size: 1.2rem;
+    }
 }
 
 /* Footer */
