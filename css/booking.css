@@ -1,11 +1,11 @@
 
 .booking-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../images/general/emergency.jpg') center/cover no-repeat;
+                url('../images/general/booking.jpg') center/cover no-repeat;
     color: white;
     padding: 6rem 0;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .booking-hero h1 {
